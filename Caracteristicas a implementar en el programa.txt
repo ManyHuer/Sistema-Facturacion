@@ -1,0 +1,20 @@
+-Sistema de inicio de sesión con 3 usuarios de diferente rango con limitaciones dependiendo de este.
+
+-Base de datos de productos con: clave, precio, descripción.
+-Usuario: clave, nombre, puesto, qr, cantidad de facturas, facturas.
+-Facturas: nombreEmisor, RFCEmisor, RFCReceptor, nombreReceptor, hora, subtotal, IVA, total, numeroFolio, EmisorFiscales, receptorFiscales, firma, productos.
+-Productos para factura: importe, precioUnitario, cantidad, clave, nombreDescripcion.
+-Domicilio emisor y receptor: calle, colonia, ciudad, estado, pais, numero, codigoPostal.
+
+-Dependiendo del RFC se les asigna el tipo: Regimen general y sin fines de lucro.
+-Los fiscales tienen 5 tipos: Asalariados, honorarios, arrendamientos de inmuebles, actividades empresariales e incorporacion fiscal.
+-Se asigna un folio diferente automicamente al crear una factura con 2022 al final.
+-Opciones de menu: crear factura, Mostrar, enviar, eliminar, salir del sistema.
+-Al enviar factura no se podra eliminar despues.
+-Limite de 20 facturas por usuario.
+
+Tipos de usuario:
+-Supervisor: es capaz de ver las facturas y eliminar facturas.
+-Jefe de empresa: acceso a todas las funciones.
+-Empleado: es capaz de crear y enviar las facturas.
+
